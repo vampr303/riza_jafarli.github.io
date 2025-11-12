@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личный сайт актёра Ризы Джафарли - портфолио, видеовизитка и контакты">
+    <title>Риза Джафарли - Актёр | Портфолио и контакты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Риза Джафарли</div>
+                <nav class="navbar">
+                    <a href="#hero" class="nav-link">Главная</a>
+                    <a href="#about" class="nav-link">Обо мне</a>
+                    <a href="#portfolio" class="nav-link">Портфолио</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Риза Джафарли</h1>
+                    <p class="hero-subtitle">Надеюсь вам здесь понравится</p>
+                    <p class="hero-subtitle">Ведь сайт был создан лично мною</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Смотреть шоурил</a>
+                        <a href="#contact" class="btn btn-secondary">Мои контакты</a>
+                    </div>
+                </div>
+                <div class="hero-video">
+                    <!-- Заметная кнопка вместо встраиваемого видео -->
+                    <a href="https://youtu.be/W_1gs1d0fl4" target="_blank" rel="noopener" class="btn btn-primary btn-hero" aria-label="Открыть шоу-рум на YouTube">Смотреть шоурил на YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img  src = Logo.jpg alt="Риза Джафарли">
+                </div>
+                <div class="about-content">
+                    <h2>Биография</h2>
+                    <p>Здравствуйте, Меня зовут <b>Риза Джафарли</b>, мне 15 лет и учусь в 10 классе. Родился в <b>Азербайджане</b> и до сих пор живу здесь, но свободно владею как Азербайджанским так и Русским языком, ну и английский знаю ( хоть и не идеально )</p>
+                    <p>Увлекаюсь программированием и робототехникой. Участвовал в различных соревнованиях такие как <b>Профессионалы 2023 - В Санк-Петербурге</b> или <b>WRO 2024: Future Engineers</b> </p>
+                    <p>По мимо <b>программирования</b> и <b>робототехники</b> я так же ходил на бои без правил - <b>MMA</b> 3 года и на <b>гимнастику</b> 6 лет ( да это сттранно но...)</p>
+                    <p>Актёрского опыта нету, но я думаю 10 лет школьного опыта подойдут)</p>
+                    
+                    <div class="skills">
+                        <h3>Мои навыки</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Электроника</span>
+                            <span class="skill-tag">Программирование</span>
+                            <span class="skill-tag">Русский Язык</span>
+                            <span class="skill-tag">Паркур</span>
+                            <span class="skill-tag">Робототехника</span>
+                            <span class="skill-tag">Дизайн и визуализация</span>
+                            <span class="skill-tag">Общие технические навыки</span>
+                            <span class="skill-tag">Коммуникация и обучение других</span>
+                            <span class="skill-tag">Спорт</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitions Section -->
+    <section class="competitions" id="portfolio">
+        <div class="container">
+            <h2>Мои соревнования</h2>
+            <div class="competitions-grid">
+
+                <div class="competition-card">
+                    <div class="competition-logo"><img src = img\pro.png alt="Профессионалы 2023"></div>
+                    <h3>профессионалы 2023</h3>
+                    <p>Первое место в Всероссийское чемпионатное движение по профессиональному мастерству «Профессионалы»</p>
+                    <button class="btn btn-primary" onclick="openCompetitionModal(0)">Узнать больше</button>
+                </div>
+
+
+                <div class="competition-card">
+                    <div class="competition-logo"><img src = img\wro.jpeg alt="WRO 2024"></div>
+                    <h3>World Robot Olimpiad 2024</h3>
+                    <p>Участие в национальном турнире с признанием жюри</p>
+                    <button class="btn btn-primary" onclick="openCompetitionModal(1)">Узнать больше</button>
+                </div>
+
+
+                <div class="competition-card">
+                    <div class="competition-logo"><img src = img\h2.png alt="SAF"></div>
+                    <h3>H2 Grand Prix Pro</h3>
+                    <p>Золотая медаль на региональном конкурсе по водородным машинам.</p>
+                    <button class="btn btn-primary" onclick="openCompetitionModal(2)">Узнать больше</button>
+                </div>
+
+                <div class="competition-card">
+                    <div class="competition-logo">🌟</div>
+                    <h3>Сюрприз</h3>
+                    <p>Что то прикольное...</p>
+                    <button class="btn btn-primary" onclick="openCompetitionModal(3)">Узнать больше</button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+                <div class="social-links">
+                    <h3>Следите за мной</h3>
+                    <a href="https://instagram.com" target="_blank" class="social-link">
+                        📷 Instagram
+                    </a>
+                    <a href="https://vk.com" target="_blank" class="social-link">
+                        🔗 VK
+                    </a>
+                    <a href="mailto:vampr303@gmail.com" class="social-link">
+                        ✉️ Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Риза Джафарли. Все права защищены. | Портфолио актёра</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Competitions -->
+    <div class="modal" id="competitionModal">
+        <div class="modal-content modal-competition-content">
+            <button class="modal-close" onclick="closeCompetitionModal()">&times;</button>
+                <div class="competition-modal-body">
+                    <div class="competition-modal-video" id="competitionVideoLinks">
+                        <!-- Кнопки/ссылки для видео будут генерироваться в script.js -->
+                    </div>
+                    <div class="competition-modal-info">
+                        <h2 id="competitionTitle"></h2>
+                        <p id="competitionDescription"></p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
